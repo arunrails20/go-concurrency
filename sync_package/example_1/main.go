@@ -9,6 +9,8 @@ import (
 func main() {
 	balance := 0
 
+	// We are using 4 CPU cores
+	// 4 CPU cores running in parallel
 	runtime.GOMAXPROCS(4)
 
 	var wg sync.WaitGroup
