@@ -18,6 +18,7 @@ func main() {
 	select {
 	case m1 := <-ch1:
 		fmt.Println(m1)
+		// time.After will return the Chan
 	case <-time.After(1 * time.Second):
 		fmt.Println("Timeout")
 	}
